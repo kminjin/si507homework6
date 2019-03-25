@@ -147,18 +147,30 @@ The onClick attribute is an event handler that instructs a certain script to run
 
 * **When you enter input that isn't valid, you see an error that is red. Why is the error in red? Why is the response for valid inputs blue?**
 
+The code above states that if current value is not one word, then the class eroor will go into effect and the color in that class is red. If the current value is one word, then the class good will be activated the the class good contains the color blue.
+
 * **What is this line `var regex = /^[a-zA-Z]+$/;` helping with? And if you googled something to figure that out, what did you google, and what, briefly, did you learn? (If you didn't need to google, you can leave that out, but explain briefly what that line is helping the program do, anyway.)**
+
+That line of code only allows for characters only! Entries that only include a-z and A-Z are allowed. So entered symbols and numbers will be considered invalid inputs.
 
 * **What's different about the syntax of conditional statements in JavaScript, compared to Python?**
 
+Instead of a colon like in python, there is a { and a closing }.
+
+
 * **What do you think the `10000` refers to in the code `.fadeOut(10000)`?**
+
+Intuitively, I think .fadeOut is meant to fade out the text and the number within the parenthesis might be related to time. When I entered an incorrect input, the "Not Valid" does end up disappearing/fading in couple seconds.
+
+
 
 * **What do you think is going on with the following code at the beginning of the program? Note that the most important thing to do for answering this question is to be thoughtful and clear, not to be absolutely correct:**
 
-```js
+js
 $(document).ready(function(){
-    $("form").submit(function(event){
-```
+$("form").submit(function(event){
+
+It is setting up a function that allows for a form taking in an input and there is a submit button that launches the event.
 
 
 * **Add some code to the `jquerylib_submit_example.html` file so that, if the input is valid and is specifically the text `hello`, rather than the visible output being `Nice!` in blue, the visible output should be `Hello to you too!`, also in blue, just like `Nice!` is.**
