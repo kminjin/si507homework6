@@ -82,6 +82,7 @@ Some JavaScript code
 //
 
 * **Explain what needs to happen to get a JavaScript program to "run", given the JavaScript you've seen in this assignment.**
+
 It needs a script tag <script> and then you need a closing tag </script>.
 
 * **What functions in JavaScript seem to be similar in function to the `print` function in Python? (There are two.) Why might you use one and not the other? Explain briefly.**
