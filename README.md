@@ -58,12 +58,11 @@ Below are a bunch of questions and indications of things to do. For each indicat
 ### Names of people you have worked with on this assignment
 * List everyone's names and uniqnames who have worked on this assignment with you, **including your own name, but make sure YOUR name is first and bold**
 * Like this:
-* **Jackie Cohen (jczetta)**
-* Yea-Ree Chang (cyearee)
-* Ruchi Ookalkar (ruchido)
-* Innocent Obi (innoobi)
-* Zhen Wang (alejwang)
-* etc.
+* **Min Jin Kim (minjin)**
+* Radhika Sondhi (rsondhi)
+* Kim Vuong (kvuong)
+* Shannon Weber (webersh)
+* Salma Siddiqui (salmasid)
 
 ## Questions & code instructions
 
@@ -86,28 +85,33 @@ Some JavaScript code
 It needs a script tag <script> and then you need a closing tag </script>.
 
 * **What functions in JavaScript seem to be similar in function to the `print` function in Python? (There are two.) Why might you use one and not the other? Explain briefly.**
-console.log is something that needs to be looked into through inspect and click on console.
 
+"console.log" is something that needs to be looked into through "inspect" and then click on "console". It is not for users.
 Alert is the pop up for users that needs to be clicked on to escape.
 
 
 * **What code would have to comment out to get rid of the pop-up box when you load the page? (Related to the last question.) Do that in the code file, and then, add code so that a text box will appear that contains the current date and time! *HINT:* Look through the rest of the code first...**
-Comment out the code for alert. I replaced Hello with new Date().
+
+Comment out the code for alert ("alert("hello")"). I replaced Hello with new Date().
 
 
 * **How can you put your own name at the top where it currently says "A name"? Explain very briefly how to do so, and replace `A name` in the web page with your own name.**
-By replacing the string in this line document.querySelector('h1').innerHTML = "a Name" with my name.
+
+By replacing the string in this line document.querySelector('h1').innerHTML = "a Name" with my name, "Min Jin Kim"
 
 * **What does the word `document` represent in this code? Explain briefly.**
+
 It represents the page which information will be displayed on.
 
 * **What is happening in line 12 (
 		`document.querySelector('#items').innerHTML = document.getElementsByTagName('li').length`
 )? Explain, briefly (<= 2 sentences).**
+
 This line gets the length of the list (all li items) and length of that array.
 
 
 * **What color would the background of this page be <u>if there were no JavaScript in this page</u>?**
+
 It becomes white.
 
 * **Why are there a couple of gray boxes on the screen with a different colored border? How could you edit this code to make them a different color? Explain briefly. Then edit the code to make those boxes some shade of blue, of your choosing.**
@@ -116,7 +120,7 @@ The background color for paragraph is set for gray and I changed the border hex 
 
 * **Edit the code so that, if you highlight `McGill University` and copy it, you see the text `O Canada` near the bottom of the page. Briefly explain why you made the edits that you did -- how did you know/figure out what to do?**
 
-I copied the function for Michigan and created a new function but replaced Michigan with Mcgill University and deleted the line of code that just had the string McGill University.
+I copied the function for Michigan and created a new function, copyFunction1 but replaced Michigan with Mcgill University and deleted the line of code that just had the string McGill University.
 
 * **In the original code, when you click the button that says `Wow`, you see a text box! Wow. Explain briefly in your own words why the following code causes that to happen:**
 
@@ -130,7 +134,7 @@ function handleClick(){
 ```js
 <button onclick=handleClick() id="wow-button">Wow</button>
 ```
-The onClick attribute is an event handler that instructs a certain script to run if the button is being pushed. The wow button has onclick handleClick() which is a function that calls for alert ("hello")
+The onClick attribute is an event handler that instructs a certain script to run if the button is being pushed. The wow button has onclick handleClick() which is a function that calls for alert new Date()).
 
 
 * **Knowing what you learned from the previous question, add code/markup to the `jsPracticeLab.html` file *so that* there is a button with the text `Spring Equinox 2019` on it somewhere on the page, and when that button is clicked, a text box containing the text `March 20, 2019` appears. (There's no function -- that I am aware of -- to automatically get this info, you've got to type it yourself.)**
